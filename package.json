@@ -1,0 +1,32 @@
+{
+	"name": "olliejt-starter-sanity",
+	"private": true,
+	"version": "1.0.0",
+	"description": "",
+	"main": "package.json",
+	"author": "Ollie Taylor <olliejt@hey.com>",
+	"license": "UNLICENSED",
+	"scripts": {
+		"start": "sanity start",
+		"dev": "sanity start",
+		"build": "sanity build",
+		"format": "prettier --write --plugin-search-dir=. './src/**/*.{js,jsx,ts,tsx}' \"!node_modules/**\"",
+		"ts": "tsc --pretty --noImplicitAny"
+	},
+	"keywords": [
+		"sanity"
+	],
+	"dependencies": {
+		"@sanity/base": "^2.3.3",
+		"@sanity/components": "^2.2.6",
+		"@sanity/core": "^2.3.3",
+		"@sanity/default-layout": "^2.3.3",
+		"@sanity/default-login": "^2.2.6",
+		"@sanity/desk-tool": "^2.3.3",
+		"@sanity/vision": "^2.2.6",
+		"prop-types": "^15.7",
+		"react": "^17.0",
+		"react-dom": "^17.0",
+		"react-icons": "^4.1.0"
+	}
+}

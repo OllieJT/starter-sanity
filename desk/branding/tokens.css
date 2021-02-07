@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/* UTILITY */
+:root {
+	--sanity-color-black: #141414;
+	--sanity-color-white: #fff;
+
+	--sanity-color-yellow-50: #fffde7;
+	--sanity-color-yellow-100: #fff9c4;
+	--sanity-color-yellow-200: #fff59d;
+	--sanity-color-yellow-300: #fff176;
+	--sanity-color-yellow-400: #ffee58;
+	--sanity-color-yellow-500: #ffeb3b;
+	--sanity-color-yellow-600: #fdd835;
+	--sanity-color-yellow-700: #fbc02d;
+	--sanity-color-yellow-800: #f9a825;
+	--sanity-color-yellow-900: #f57f17;
+
+	--sanity-color-green-50: #e0f2f1;
+	--sanity-color-green-100: #b2dfdb;
+	--sanity-color-green-200: #80cbc4;
+	--sanity-color-green-300: #4db6ac;
+	--sanity-color-green-400: #26a69a;
+	--sanity-color-green-500: #009688;
+	--sanity-color-green-600: #00897b;
+	--sanity-color-green-700: #00796b;
+	--sanity-color-green-800: #00695c;
+	--sanity-color-green-900: #004d40;
+
+	--state-success-color: #009688;
+	--state-info-color: #603dfe;
+	--state-warning-color: #f8ea6c;
+	--state-danger-color: #bd0c1b;
+}
+
+/* Brand */
+:root {
+	/*
+	--brand-primary: var(--sanity-color-yellow-500);
+	--brand-primary--inverted: color(var(--brand-primary) contrast(80%));
+	--brand-secondary: var(--sanity-color-green-600);
+	--brand-secondary--inverted: color(var(--brand-secondary) contrast(80%));
+
+	--brand-darkest: var(--black);
+	--brand-darkest--inverted: color(var(--brand-darkest) contrast(80%));
+	--brand-lightest: var(--white);
+	--brand-lightest--inverted: color(var(--brand-lightest) contrast(80%));
+
+	--brand-faded: color(var(--brand-primary) blend(var(--black) 60%));
+
+	--text-selection-color: color(var(--brand-primary) alpha(20%));
+	*/
+
+	--font-family-sans-serif: "Inter", sans-serif;
+	--font-size-base: 18px;
+}
