@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
 /* UTILITY */
-:root {
+/* :root {
 	--sanity-color-black: #141414;
 	--sanity-color-white: #fff;
 
@@ -31,26 +31,25 @@
 	--state-info-color: #603dfe;
 	--state-warning-color: #f8ea6c;
 	--state-danger-color: #bd0c1b;
-}
+} */
 
 /* Brand */
-:root {
-	/*
-	--brand-primary: var(--sanity-color-yellow-500);
+/* :root {
+	--brand-primary: #3b4f4e;
 	--brand-primary--inverted: color(var(--brand-primary) contrast(80%));
-	--brand-secondary: var(--sanity-color-green-600);
+
+	--brand-secondary: #e1b264;
 	--brand-secondary--inverted: color(var(--brand-secondary) contrast(80%));
 
 	--brand-darkest: var(--black);
 	--brand-darkest--inverted: color(var(--brand-darkest) contrast(80%));
+
 	--brand-lightest: var(--white);
 	--brand-lightest--inverted: color(var(--brand-lightest) contrast(80%));
 
 	--brand-faded: color(var(--brand-primary) blend(var(--black) 60%));
-
 	--text-selection-color: color(var(--brand-primary) alpha(20%));
-	*/
 
 	--font-family-sans-serif: "Inter", sans-serif;
 	--font-size-base: 18px;
-}
+} */
