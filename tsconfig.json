@@ -1,4 +1,7 @@
 {
+	// Note: This config is only used to help editors like VS Code understand/resolve
+	// parts, the actual transpilation is done by babel. Any compiler configuration in
+	// here will be ignored.
 	"compilerOptions": {
 		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
@@ -26,33 +29,5 @@
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true
 	},
-	"exclude": ["./node_modules/"],
-	"include": ["./node_modules/@sanity/base/types/**/*.ts", "./**/*.ts", "./**/*.tsx"],
-	"parts": [
-		{
-			"name": "part:@sanity/base/schema",
-			"path": "./schemas/schema"
-		},
-		{
-			"name": "part:@sanity/desk-tool/structure",
-			"path": "./desk/structure.ts"
-		},
-		{
-			"implements": "part:@sanity/base/brand-logo",
-			"path": "./desk/branding/logo.tsx"
-		},
-		{
-			"implements": "part:@sanity/base/theme/variables/override-style",
-			"path": "./desk/branding/tokens.css"
-		},
-		{
-			"implements": "part:@sanity/production-preview/resolve-production-url",
-			"path": "./desk/resolveUrl.ts"
-		}
-	],
-	"env": {
-		"development": {
-			"plugins": ["@sanity/vision"]
-		}
-	}
+	"include": ["./node_modules/@sanity/base/types/**/*.ts", "./**/*.ts", "./**/*.tsx"]
 }
