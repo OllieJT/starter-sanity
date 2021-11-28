@@ -1,3 +1,5 @@
-export * from ".";
+import person from "./person";
+import article from "./article";
+import collection from "./collection";
 
-export default [];
+export default [person, article, collection];
