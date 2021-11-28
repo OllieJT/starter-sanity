@@ -2,7 +2,30 @@
 const isDev = process.env.NODE_ENV === "development";
 export const domain = isDev ? "http://localhost:3000" : "https://olliejt.com";
 
-function resolvePath(type: string, slug: string) {
+import { SanityDocument } from "sanity-codegen";
+interface Document extends SanityDocument {
+	_type: string;
+	slug?: {
+		_type: "slug";
+		current: string;
+	};
+}
+
+interface ResolvePath {
+	type: string;
+	slug?: string;
+}
+
+interface ResolveUrl {
+	document: Document;
+	relative?: boolean;
+}
+
+interface FormatPretty {
+	url: string;
+}
+
+function resolvePath({ type, slug = "" }: ResolvePath) {
 	if (!type) {
 		console.warn(`Could not find page type for ${type} / ${slug}`);
 		return "/404";
@@ -23,7 +46,7 @@ function resolvePath(type: string, slug: string) {
 	}
 }
 
-function resolveUrl(document: any, relative = false) {
+function resolveUrl({ document, relative = false }: ResolveUrl) {
 	if (!document) {
 		console.warn(`No document provided to url resolver!`);
 		return "/404";
@@ -37,13 +60,13 @@ function resolveUrl(document: any, relative = false) {
 		return "/404";
 	}
 
-	const path = resolvePath(type, slug);
+	const path = resolvePath({ type, slug });
 
 	if (relative) return path;
 	else return domain + path;
 }
 
-const formatPretty = (url: string): string =>
+const formatPretty = ({ url }: FormatPretty): string =>
 	url.replace("https://", "").replace("http://", "").replace("www.", "");
 
 export default { resolvePath, resolveUrl, formatPretty };
