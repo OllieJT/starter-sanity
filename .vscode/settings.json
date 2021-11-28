@@ -1,0 +1,23 @@
+{
+	"files.exclude": {
+		"**/*-lock.json": true,
+		"**/*.map": true,
+		"**/.cache": true,
+		"**/.DS_Store": true,
+		"**/.gitattributes": true,
+		"**/*.Identifier": true,
+		"**/node_modules": true,
+		"**/dist/": true,
+		"**/.checksums": true
+	},
+	"files.associations": {
+		"**/*.env*": "dotenv",
+		"**/*.md": "mdx"
+		//"*.css": "postcss"
+	},
+	"files.watcherExclude": {
+		"**/node_modules": true,
+		"**/.next": true
+	},
+	"cSpell.words": ["codegen", "datetime", "fieldsets", "groq", "richtext", "xxtzgn"]
+}
