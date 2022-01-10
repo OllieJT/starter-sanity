@@ -1,8 +1,5 @@
-//TODO: Replace olliejt.com
-const isDev = process.env.NODE_ENV === "development";
-export const domain = isDev ? "http://localhost:3000" : "https://olliejt.com";
-
 import { SanityDocument } from "sanity-codegen";
+import { siteUrl } from "./constants";
 interface Document extends SanityDocument {
 	_type: string;
 	slug?: {
@@ -34,13 +31,11 @@ function resolvePath({ type, slug = "" }: ResolvePath) {
 	switch (type) {
 		case "article":
 			return `/articles/${slug}`;
-		case "collection":
-			return `/collection/${slug}`;
 		case "topic":
 			return `/topic/${slug}`;
 		case "author":
 			return `/author/${slug}`;
-		case "homepage":
+		case "page":
 		default:
 			return `/${slug}`;
 	}
@@ -63,10 +58,12 @@ function resolveUrl({ document, relative = false }: ResolveUrl) {
 	const path = resolvePath({ type, slug });
 
 	if (relative) return path;
-	else return domain + path;
+	else return siteUrl + path;
 }
 
-const formatPretty = ({ url }: FormatPretty): string =>
-	url.replace("https://", "").replace("http://", "").replace("www.", "");
+const formatPretty = ({ url }: FormatPretty): string => {
+	if (!url) return "";
+	else return url.replace("https://", "").replace("http://", "").replace("www.", "");
+};
 
 export default { resolvePath, resolveUrl, formatPretty };
