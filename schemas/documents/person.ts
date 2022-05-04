@@ -1,6 +1,6 @@
 import { HiUser } from "react-icons/hi";
 import { transformBlocks } from "../../lib/utility/transform-block";
-import { withSlug } from "../common/slug";
+import { withSlug } from "../common/with-slug";
 
 export default {
 	title: "Person",

@@ -1,6 +1,5 @@
 import media from "./media";
-import content from "./content";
-import richtext from "./richtext";
+import portableText from "./portable-text";
 import links from "./links";
 
-export default [...media, ...links, content, richtext];
+export default [...media, ...links, ...portableText];

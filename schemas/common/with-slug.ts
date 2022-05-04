@@ -17,6 +17,8 @@ export function withSlug({ source, fieldset }: Props) {
 		},
 		fieldset,
 
+		readOnly: ({ document }) => !document?.publishedOnce,
+
 		validation: (Rule) => Rule.required(),
 		codegen: { required: true },
 	};

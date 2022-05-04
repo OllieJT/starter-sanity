@@ -1,4 +1,4 @@
-import { withSlug } from "../common/slug";
+import { withSlug } from "../common/with-slug";
 import { HiDocumentText } from "react-icons/hi";
 
 export default {

@@ -1,8 +1,8 @@
 import { HiOutlinePhotograph } from "react-icons/hi";
-import { alternateText } from "../../common";
+import { alternateText } from "../../common/image";
 
 export default {
-	title: "Image",
+	title: "Thumbnail",
 	name: "thumbnail",
 	type: "image",
 	icon: HiOutlinePhotograph,
