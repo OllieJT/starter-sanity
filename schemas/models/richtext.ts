@@ -1,4 +1,5 @@
 import { HiMenuAlt1 } from "react-icons/hi";
+import { linkFields } from "./links";
 
 export default {
 	title: "Rich Text",
@@ -30,12 +31,7 @@ export default {
 					{ title: "Italic", value: "em" },
 					{ title: "Highlight", value: "mark" },
 				],
-				annotations: [
-					{ title: "URL", type: "linkExternal" },
-					{ title: "Article Link", type: "linkToArticle" },
-					{ title: "Collection Link", type: "linkToCollection" },
-					{ title: "Person Link", type: "linkToPerson" },
-				],
+				annotations: [...linkFields],
 			},
 		},
 	],
