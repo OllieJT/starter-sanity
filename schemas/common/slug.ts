@@ -1,6 +1,11 @@
-import { slugify } from "../../utility/slugify";
+import { slugify } from "../../lib/utility/slugify";
 
-export function withSlug(source: string, fieldset?: string) {
+interface Props {
+	source: string;
+	fieldset?: string;
+}
+
+export function withSlug({ source, fieldset }: Props) {
 	return {
 		title: "URL Slug",
 		description: "This determines the URL path for the page",
@@ -8,7 +13,7 @@ export function withSlug(source: string, fieldset?: string) {
 		type: "slug",
 		options: {
 			source,
-			slugify: (input) => slugify(input),
+			slugify,
 		},
 		fieldset,
 

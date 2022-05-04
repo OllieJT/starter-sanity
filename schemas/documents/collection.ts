@@ -19,7 +19,7 @@ export default {
 			name: "description",
 			type: "text",
 		},
-		withSlug("title"),
+		withSlug({ source: "title" }),
 	],
 	preview: {
 		select: {
@@ -28,7 +28,12 @@ export default {
 			media: "metadata.thumbnails[0]",
 			slug: "slug",
 		},
-		prepare({ title = "No Title", description, media, slug = { current: "/no-slug" } }) {
+		prepare({
+			title = "No Title",
+			description,
+			media,
+			slug = { current: "/no-slug" },
+		}) {
 			return {
 				title,
 				description,

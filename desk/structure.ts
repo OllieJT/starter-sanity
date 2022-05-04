@@ -1,10 +1,11 @@
 import S from "@sanity/desk-tool/structure-builder";
-import { InitialValueTemplates } from "../initial-value-templates";
-import { structureListAll } from "./helper/structure-list-all";
-import { structureListType } from "./helper/structure-list-type";
-import { structureListIcon } from "./helper/structure-list-icon";
+import { InitialValueTemplates } from "./initial-value-templates";
+import { structureListAllTypes } from "../lib/structure/structure-list-all";
+import { structureListType } from "../lib/structure/structure-list-type";
+import { HiEmojiHappy } from "react-icons/hi";
+import { isDevMode } from "../lib/constants";
 
-export default () =>
+const structure = () =>
 	S.list()
 		.title("Content Management")
 		.items([
@@ -18,7 +19,7 @@ export default () =>
 			structureListType({
 				title: "All Articles",
 				type: "article",
-				icon: structureListIcon("A"),
+				icon: HiEmojiHappy,
 				initialValues: [
 					S.initialValueTemplateItem(InitialValueTemplates.Article),
 				],
@@ -27,7 +28,7 @@ export default () =>
 			structureListType({
 				title: "All People",
 				type: "person",
-				icon: structureListIcon("P"),
+				icon: HiEmojiHappy,
 				initialValues: [
 					S.initialValueTemplateItem(InitialValueTemplates.Person),
 				],
@@ -36,11 +37,15 @@ export default () =>
 			structureListType({
 				title: "All Collections",
 				type: "collection",
-				icon: structureListIcon("C"),
+				icon: HiEmojiHappy,
 				initialValues: [
 					S.initialValueTemplateItem(InitialValueTemplates.Collection),
 				],
 			}),
 
-			process.env.NODE_ENV === "development" ? structureListAll : S.divider(),
+			isDevMode ? structureListAllTypes.listItem : S.divider(),
 		]);
+
+const listAll = () => structureListAllTypes.list;
+
+export default isDevMode ? listAll : structure;

@@ -1,6 +1,6 @@
 import { HiViewGridAdd } from "react-icons/hi";
 import { FaHighlighter } from "react-icons/fa";
-import { Marker } from "../../components/Marker";
+import { Mark } from "../../lib/components/element-mark";
 
 export default {
 	title: "Page Content",
@@ -32,10 +32,10 @@ export default {
 					{ title: "Italic", value: "em" },
 					{
 						title: "Highlight",
-						value: "marker",
+						value: "mark",
 						blockEditor: {
 							icon: FaHighlighter,
-							render: Marker,
+							render: Mark,
 						},
 					},
 				],

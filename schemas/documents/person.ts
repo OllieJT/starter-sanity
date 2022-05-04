@@ -1,5 +1,5 @@
 import { HiUser } from "react-icons/hi";
-import { transformBlocks } from "../../utility/transform-block";
+import { transformBlocks } from "../../lib/utility/transform-block";
 import { withSlug } from "../common/slug";
 
 export default {
@@ -7,7 +7,9 @@ export default {
 	name: "person",
 	type: "document",
 	icon: HiUser,
-	fieldsets: [{ name: "name", title: "Name", options: { columns: 2, collapsible: false } }],
+	fieldsets: [
+		{ name: "name", title: "Name", options: { columns: 2, collapsible: false } },
+	],
 	fields: [
 		{
 			title: "First Name",
@@ -54,7 +56,7 @@ export default {
 				],
 			},
 		},
-		withSlug("nameFirst"),
+		withSlug({ source: "nameFirst" }),
 		{
 			title: "Avatar",
 			name: "avatar",

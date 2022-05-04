@@ -1,16 +1,17 @@
 import S from "@sanity/desk-tool/structure-builder";
-import { structureListIcon } from "./structure-list-icon";
+import { HiDocument } from "react-icons/hi";
+import { IconType } from "react-icons";
 
 interface DynamicDocument {
 	title: string;
 	type: string;
-	icon: () => JSX.Element;
+	icon: IconType | undefined;
 	initialValues: any[];
 }
 export const structureListType = ({
 	title,
 	type,
-	icon = structureListIcon("🚧"),
+	icon = HiDocument,
 	initialValues,
 }: DynamicDocument) =>
 	S.listItem().title(title).icon(icon).child(

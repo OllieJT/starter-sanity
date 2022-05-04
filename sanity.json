@@ -26,15 +26,15 @@
 		},
 		{
 			"implements": "part:@sanity/base/brand-logo",
-			"path": "./desk/branding/logo.tsx"
+			"path": "./lib/components/logo.tsx"
 		},
 		{
 			"implements": "part:@sanity/base/theme/variables/override-style",
-			"path": "./desk/branding/tokens.css"
+			"path": "./lib/tokens.css"
 		},
 		{
 			"name": "part:@sanity/desk-tool/structure",
-			"path": "./desk/structure"
+			"path": "./desk/structure.ts"
 		},
 		{
 			"implements": "part:@sanity/production-preview/resolve-production-url",
@@ -42,7 +42,7 @@
 		},
 		{
 			"name": "part:@sanity/base/initial-value-templates",
-			"path": "./desk/initial-value-templates"
+			"path": "./desk/initial-value-templates.ts"
 		},
 		{
 			"name": "part:@sanity/base/new-document-structure",

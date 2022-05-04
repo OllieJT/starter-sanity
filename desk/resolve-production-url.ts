@@ -1,7 +1,7 @@
-import handleUrl from "../utility/handle-url";
+import { resolveUrl } from "../lib/utility/resolve-url";
 
 function resolveProductionUrl(document: any) {
-	return handleUrl.resolveUrl({ document });
+	return resolveUrl({ document });
 }
 
 export default resolveProductionUrl;

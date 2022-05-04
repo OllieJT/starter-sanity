@@ -1,8 +1,8 @@
 import { HiExternalLink } from "react-icons/hi";
 
 export default {
-	title: "Link to URL",
-	name: "linkExternal",
+	title: "Link to external URL",
+	name: "link",
 	description: "Link to a page on another website",
 	type: "object",
 	icon: HiExternalLink,

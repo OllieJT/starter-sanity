@@ -35,7 +35,7 @@ export default {
 			name: "content",
 			type: "richtext",
 		},
-		withSlug("title", "metadata"),
+		withSlug({ source: "title", fieldset: "metadata" }),
 
 		{
 			title: "Publish Date",

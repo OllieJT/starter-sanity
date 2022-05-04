@@ -31,8 +31,10 @@ export default {
 					{ title: "Highlight", value: "mark" },
 				],
 				annotations: [
-					{ title: "Link to URL", type: "linkExternal" },
-					{ title: "Tag another page", type: "linkInternal" },
+					{ title: "URL", type: "linkExternal" },
+					{ title: "Article Link", type: "linkToArticle" },
+					{ title: "Collection Link", type: "linkToCollection" },
+					{ title: "Person Link", type: "linkToPerson" },
 				],
 			},
 		},

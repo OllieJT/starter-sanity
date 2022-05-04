@@ -1,36 +1,39 @@
 {
-  "name": "olliejt-starter-sanity",
-  "private": true,
-  "version": "1.0.0",
-  "description": "",
-  "main": "package.json",
-  "author": "Ollie Taylor <olliejt@hey.com>",
-  "license": "UNLICENSED",
-  "scripts": {
-    "start": "sanity start",
-    "dev": "sanity start",
-    "build": "sanity build",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-    "ts": "tsc --pretty",
-    "codegen": "npx sanity-codegen"
-  },
-  "keywords": [
-    "sanity"
-  ],
-  "dependencies": {
-    "@sanity/base": "^2.23.3",
-    "@sanity/core": "^2.23.2",
-    "@sanity/default-layout": "^2.23.3",
-    "@sanity/default-login": "^2.23.2",
-    "@sanity/desk-tool": "^2.23.4",
-    "@sanity/production-preview": "^2.15.0",
-    "@sanity/vision": "^2.23.3",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-dom": "^17.0",
-    "react-icons": "^4.3.1",
-    "react-player": "^2.9.0",
-    "sanity-codegen": "^0.9.8",
-    "styled-components": "^5.3.3"
-  }
+	"name": "olliejt-starter-sanity",
+	"private": true,
+	"version": "1.0.0",
+	"description": "",
+	"main": "package.json",
+	"author": "Ollie Taylor <olliejt@hey.com>",
+	"license": "UNLICENSED",
+	"scripts": {
+		"start": "sanity start",
+		"dev": "sanity start",
+		"build": "sanity build",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+		"ts": "tsc --pretty",
+		"codegen": "npx sanity-codegen"
+	},
+	"keywords": [
+		"sanity"
+	],
+	"dependencies": {
+		"@sanity/base": "^2.29.8",
+		"@sanity/core": "^2.29.5",
+		"@sanity/default-layout": "^2.29.8",
+		"@sanity/default-login": "^2.29.8",
+		"@sanity/desk-tool": "^2.29.8",
+		"@sanity/eslint-config-studio": "^2.0.0",
+		"@sanity/production-preview": "^2.29.3",
+		"@sanity/vision": "^2.29.8",
+		"eslint": "^8.6.0",
+		"prop-types": "^15.8.1",
+		"react-dom": "^17.0",
+		"react-icons": "^4.3.1",
+		"react-player": "^2.10.0",
+		"react": "^17.0",
+		"sanity-codegen": "^0.9.8",
+		"styled-components": "^5.3.5"
+	},
+	"devDependencies": {}
 }
