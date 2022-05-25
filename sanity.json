@@ -41,6 +41,14 @@
 			"path": "./desk/resolve-production-url.ts"
 		},
 		{
+			"implements": "part:@sanity/base/document-actions/resolver",
+			"path": "./desk/resolve-document-actions.ts"
+		},
+		{
+			"implements": "part:@sanity/base/document-badges/resolver",
+			"path": "./desk/resolve-document-badges.ts"
+		},
+		{
 			"name": "part:@sanity/base/initial-value-templates",
 			"path": "./desk/initial-value-templates.ts"
 		},

@@ -25,6 +25,7 @@
 		"@sanity/desk-tool": "^2.29.8",
 		"@sanity/eslint-config-studio": "^2.0.0",
 		"@sanity/production-preview": "^2.29.3",
+		"@sanity/scheduled-publishing": "^0.1.5",
 		"@sanity/vision": "^2.29.8",
 		"eslint": "^8.6.0",
 		"prop-types": "^15.8.1",
