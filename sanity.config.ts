@@ -12,7 +12,7 @@ export default defineConfig({
 	// theme,
 
 	// TODO: Configure the project id and dataset
-	projectId: 'dratd9c0',
+	projectId: '00000000',
 	dataset: 'production',
 
 	plugins: [deskTool({ title: 'Content Management' }), visionTool({ title: 'Data Tool' })],
