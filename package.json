@@ -1,40 +1,35 @@
 {
-	"name": "olliejt-starter-sanity",
+	"name": "todo",
 	"private": true,
 	"version": "1.0.0",
-	"description": "",
 	"main": "package.json",
-	"author": "Ollie Taylor <olliejt@hey.com>",
 	"license": "UNLICENSED",
+	"prettier": "@inqling/prettier-config",
 	"scripts": {
+		"dev": "sanity dev",
 		"start": "sanity start",
-		"dev": "sanity start",
 		"build": "sanity build",
+		"deploy": "sanity deploy",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"ts": "tsc --pretty",
-		"codegen": "npx sanity-codegen"
+		"ts": "tsc --pretty --noImplicitAny"
 	},
-	"keywords": [
-		"sanity"
-	],
+	"keywords": ["sanity"],
 	"dependencies": {
-		"@sanity/base": "^2.29.8",
-		"@sanity/core": "^2.29.5",
-		"@sanity/default-layout": "^2.29.8",
-		"@sanity/default-login": "^2.29.8",
-		"@sanity/desk-tool": "^2.29.8",
-		"@sanity/eslint-config-studio": "^2.0.0",
-		"@sanity/production-preview": "^2.29.3",
-		"@sanity/scheduled-publishing": "^0.1.5",
-		"@sanity/vision": "^2.29.8",
-		"eslint": "^8.6.0",
-		"prop-types": "^15.8.1",
-		"react-dom": "^17.0",
-		"react-icons": "^4.3.1",
-		"react-player": "^2.10.0",
-		"react": "^17.0",
-		"sanity-codegen": "^0.9.8",
-		"styled-components": "^5.3.5"
+		"date-fns": "^2.29.3",
+		"react-icons": "^4.7.1",
+		"zod": "^3.20.2",
+		"@sanity/vision": "^3.1.2",
+		"react-dom": "^18.2.0",
+		"react": "^18.2.0",
+		"sanity": "^3.1.2",
+		"styled-components": "^5.3.6"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"@inqling/prettier-config": "^1.1.0",
+		"groq": "^2.33.2",
+		"@sanity/eslint-config-studio": "^2.0.1",
+		"eslint": "^8.30.0",
+		"prettier": "^2.8.1",
+		"typescript": "^4.9.4"
+	}
 }

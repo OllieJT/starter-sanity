@@ -1,10 +1,6 @@
-# olliejt-starter-sanity
+# Sanity v3 ts Starter
 
-This is a Typescript-[Sanity](https://www.sanity.io/docs/schema-types) project for building website backends.
-
-## Author
-
-Built by Ollie Taylor ([OllieJT](https://github.com/OllieJT))
+This is a Typescript-[Sanity v3](https://www.sanity.io/docs/schema-types) project for building website backends.
 
 ## Get started
 
@@ -12,7 +8,7 @@ Built by Ollie Taylor ([OllieJT](https://github.com/OllieJT))
 npx degit github:OllieJT/starter-sanity YOUR_PROJECT_NAME
 ```
 
-### npm scripts
+### Scripts
 
 | Syntax   | Description                            |
 | -------- | -------------------------------------- |
@@ -21,20 +17,10 @@ npx degit github:OllieJT/starter-sanity YOUR_PROJECT_NAME
 | `format` | Format all files in /src with prettier |
 | `ts`     | Check for typescript errors            |
 
-### Developing
+### Useful links
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3333](http://localhost:3333) with your browser to see the result.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
--   [Schema Types](https://www.sanity.io/docs/schema-types) - build out the api.
+- Sanity [Schema Types](https://www.sanity.io/docs/schema-types).
+- Sanity [Structure Builder](https://www.sanity.io/docs/structure-builder-reference).
+- Sanity [Plugins](https://www.sanity.io/plugins).
+- Sanity [Themes](https://themer.sanity.build).
+- Date formatter [date-fns](https://date-fns.org/docs/Getting-Started).

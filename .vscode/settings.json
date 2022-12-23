@@ -1,23 +1,26 @@
 {
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnType": false,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.organizeImports": true
+	},
+	"eslint.packageManager": "yarn",
 	"files.exclude": {
-		"**/*-lock.json": true,
-		"**/*.map": true,
-		"**/.cache": true,
-		"**/.DS_Store": true,
-		"**/.gitattributes": true,
-		"**/*.Identifier": true,
-		"**/node_modules": true,
-		"**/dist/": true,
-		"**/.checksums": true
+		".cache": true,
+		".DS_Store": true,
+		".gitattributes": true,
+		".svelte-kit": true,
+		"*-lock.*": true,
+		"*.Identifier": true,
+		"*.map": true,
+		"node_modules": true,
+		"tsconfig.tsbuildinfo": true,
+		".sanity": true,
+		"dist": true
 	},
-	"files.associations": {
-		"**/*.env*": "dotenv",
-		"**/*.md": "mdx"
-		//"*.css": "postcss"
-	},
-	"files.watcherExclude": {
-		"**/node_modules": true,
-		"**/.next": true
-	},
-	"cSpell.words": ["codegen", "datetime", "fieldsets", "groq", "richtext", "xxtzgn"]
+	"files.watcherExclude": { "**/node_modules": true },
+	"problems.sortOrder": "severity",
+	"todo-tree.tree.scanMode": "workspace only"
 }

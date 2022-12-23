@@ -2,12 +2,14 @@
 	// See http://go.microsoft.com/fwlink/?LinkId=827846
 	// for the documentation about the extensions.json format
 	"recommendations": [
-		"esbenp.prettier-vscode",
 		"aaron-bond.better-comments",
+		"bradlc.vscode-tailwindcss",
+		"esbenp.prettier-vscode",
 		"gruntfuggly.todo-tree",
+		"hdoro.sanity-snippets",
 		"mikestead.dotenv",
-
+		"ms-vscode.vscode-typescript-next",
 		"sanity-io.vscode-sanity",
-		"hdoro.sanity-snippets"
+		"VisualStudioExptTeam.vscodeintellicode"
 	]
 }
